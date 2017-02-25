@@ -1,4 +1,11 @@
-//Setup
+/**
+ * Created by Karetko Victor on 23.02.2017.
+ *
+ * The function should check if firstName is an actual contact's firstName and the given property (prop) is a property of that contact.
+ * If both are true, then return the "value" of that property.
+ * If firstName does not correspond to any contacts then return "No such contact".
+ * If prop does not correspond to any valid properties then return "No such property".
+ */
 var contacts = [
     {
         "firstName": "Akira",
@@ -28,7 +35,6 @@ var contacts = [
 
 
 function lookUpProfile(firstName, prop){
-// Only change code below this line
   var index = -1;
   for (var i = 0; i < contacts.length; i++) {
     if (contacts[i].firstName == firstName) {
@@ -43,10 +49,6 @@ function lookUpProfile(firstName, prop){
   } else {
     return "No such property";
   }
-  
-  
-// Only change code above this line
 }
 
-// Change these values to test your function
 lookUpProfile("Akira", "likes");
