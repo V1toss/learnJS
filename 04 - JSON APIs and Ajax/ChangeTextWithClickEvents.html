@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="Karetko Victor">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#getMessage").on("click", function () {
+                $(".message").html("Here is the message");
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+<div class="container-fluid">
+    <div class="row text-center">
+        <h2>Cat Photo Finder</h2>
+    </div>
+    <div class="row text-center">
+        <div class="col-xs-12 well message">
+            The message will go here
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-xs-12">
+            <button id="getMessage" class="btn btn-primary">
+                Get Message
+            </button>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
